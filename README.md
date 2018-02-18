@@ -1,2 +1,4 @@
 # tinyone-2
-Статичная верстка
+Статичная верстка https://kseveru.github.io/tinyone-2/
+
+Макет: tinyone
