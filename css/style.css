@@ -78,6 +78,12 @@ img {
   cursor: pointer;
 }
 
+.btn-reset:disabled {
+  opacity: 0.5;
+
+  cursor: default;
+}
+
 
 /* HEADER
 ====================================================================== */
@@ -341,8 +347,6 @@ img {
   background-color: #ffffff;
   border-radius: 50%;
   opacity: 0.5;
-
-  cursor: pointer;
 }
 
 .slider__select--active {
@@ -513,8 +517,6 @@ img {
 
   background-color: #fcdb00;
   border-radius: 4px;
-
-  cursor: pointer;
 }
 
 /* Address, site navigation
