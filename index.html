@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Tinyone 2</title>
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -13,9 +12,11 @@
 
   <header class="page-header">
     <div class="page-header__inner page-inner">
-			<button class="btn-show btn-reset" type="button"><span class="hidden">Show/close main menu</span></button>
       <nav class="site-nav">
-        <ul class="site-nav__list">
+        <button class="site-nav__btn btn-reset nojs" type="button">
+          <span class="hidden">Show/close main menu</span>
+        </button>
+        <ul class="site-nav__list nojs">
           <li class="site-nav__item">
             <a class="site-nav__link" href="#">Features</a>
           </li>
@@ -33,23 +34,23 @@
 
       <ul class="social">
         <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__img" src="img/icon-facebook.png" width="19" height="20" alt="facebook">
+          <a class="social__link" href="#" title="on facebook">
+            <img class="social__img" src="img/icon-facebook.png" width="19" height="20" alt="on facebook">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__img" src="img/icon-twitter.png" width="19" height="20" alt="twitter">
+          <a class="social__link" href="#" title="on twitter">
+            <img class="social__img" src="img/icon-twitter.png" width="19" height="20" alt="on twitter">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__img" src="img/icon-google.png" width="19" height="20" alt="google+">
+          <a class="social__link" href="#" title="on google+">
+            <img class="social__img" src="img/icon-google.png" width="19" height="20" alt="on google+">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__img" src="img/icon-pinterest.png" width="19" height="20" alt="pinterest">
+          <a class="social__link" href="#" title="on pinterest">
+            <img class="social__img" src="img/icon-pinterest.png" width="19" height="20" alt="on pinterest">
           </a>
         </li>
       </ul>
@@ -70,17 +71,17 @@
           <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis</p>
           <ul class="slide__list">
             <li class="slide__item">
-              <a class="slide__link" href="#">
+              <a class="slide__link" href="#" title="for apple">
                 <img class="slide__link-img" src="img/icon-fa-apple.png" width="25" height="31" alt="for apple">
               </a>
             </li>
             <li class="slide__item">
-              <a class="slide__link" href="#">
+              <a class="slide__link" href="#" title="for android">
                 <img class="slide__link-img" src="img/icon-fa-android.png" width="26" height="30" alt="for android">
               </a>
             </li>
             <li class="slide__item">
-              <a class="slide__link" href="#">
+              <a class="slide__link" href="#" title="for windows">
                 <img class="slide__link-img" src="img/icon-fa-windows.png" width="30" height="31" alt="for windows">
               </a>
             </li>
@@ -91,13 +92,19 @@
           <h3 class="hidden">Slider navigation</h3>
           <ul class="slider__toggle-list">
             <li class="slider__toggle-item">
-              <button class="slider__select slider__select--active btn-reset" type="button"><span class="hidden">toggle slide 1</span></button>
+              <button class="slider__select slider__select--active btn-reset" type="button">
+                <span class="hidden">toggle slide 1</span>
+              </button>
             </li>
             <li class="slider__toggle-item">
-              <button class="slider__select btn-reset" type="button"><span class="hidden">toggle slide 2</span></button>
+              <button class="slider__select btn-reset" type="button">
+                <span class="hidden">toggle slide 2</span>
+              </button>
             </li>
             <li class="slider__toggle-item">
-              <button class="slider__select btn-reset" type="button"><span class="hidden">toggle slide 3</span></button>
+              <button class="slider__select btn-reset" type="button">
+                <span class="hidden">toggle slide 3</span>
+              </button>
             </li>
           </ul>
         </section>
