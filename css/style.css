@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
 
@@ -106,7 +107,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-          justify-content: space-between;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -283,6 +286,8 @@ img {
 }
 
 .slide__list {
+  position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,6 +297,7 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 282px;
   margin: 25px auto 0;
   padding: 0;
 
@@ -317,6 +323,47 @@ img {
 
   border: 2px solid #000000;
   border-radius: 50%;
+}
+
+.slide__link:hover > .slide__link-download,
+.slide__link:focus > .slide__link-download {
+  top: 0;
+  left: 0;
+  overflow: visible;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  width: 282px;
+  height: 100%;
+
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #010101;
+  border-radius: 4px;
+
+  clip: auto;
+  -webkit-clip-path: none;
+          clip-path: none;
+}
+
+.slide__link-download::after {
+  content: "";
+
+  width: 24px;
+  height: 18px;
+  margin-left: 25px;
+
+  background: url("../img/icon-fa-download.png") 0 0 no-repeat;
 }
 
 /* toggle
