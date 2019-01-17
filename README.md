@@ -3,7 +3,7 @@
 [kseveru.github.io/tinyone-2](https://kseveru.github.io/tinyone-2/ "Открыть проект")
 
 **Верстка**: статичная  
-**Страниц**: landing page  
+**Страниц**: 1 (landing page)  
 **Макет**: &ndash;  (кто знает автора, напишите мне, пожалуйста)
 
 <table>
